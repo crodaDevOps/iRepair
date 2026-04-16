@@ -186,15 +186,15 @@ export function QuoteRequestForm({ trigger, prefilledItem, onSuccess }: QuoteReq
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
-            <MessageSquare className="w-5 h-5 text-emerald-600" />
+            <MessageSquare className="w-5 h-5 text-primary" />
             Request a Quote
           </DialogTitle>
         </DialogHeader>
 
         {isSuccess ? (
           <div className="py-12 text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-900 mb-4">
-              <CheckCircle2 className="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+              <CheckCircle2 className="w-8 h-8 text-primary" />
             </div>
             <h3 className="text-xl font-semibold text-foreground">Quote Request Submitted!</h3>
             <p className="text-muted-foreground mt-2">

@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Header } from "./header";
 import { Footer } from "./footer";
@@ -61,8 +62,15 @@ export function MainLayout({
   onLogout,
   onSearch,
   className,
-  showSidebar = true,
+  showSidebar,
 }: MainLayoutProps) {
+  const pathname = usePathname();
+  // Sidebar is only shown on product catalog routes by default.
+  // Explicit `showSidebar` prop takes precedence if provided.
+  const sidebarVisible =
+    typeof showSidebar === "boolean"
+      ? showSidebar
+      : pathname?.startsWith("/products") ?? false;
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = React.useState(false);
   const [isMobile, setIsMobile] = React.useState(false);
@@ -111,11 +119,9 @@ export function MainLayout({
       />
 
       {/* Main Content Area with Sidebar */}
-      <div className="flex-1 flex pt-16">
-        {" "}
-        {/* pt-16 to account for fixed header */}
+      <div className="flex-1 flex">
         {/* Desktop Sidebar - Persistent on lg screens */}
-        {showSidebar && !isMobile && (
+        {sidebarVisible && !isMobile && (
           <aside
             className={cn(
               "hidden lg:flex flex-col border-r bg-background transition-all duration-300",
@@ -164,7 +170,7 @@ export function MainLayout({
           </aside>
         )}
         {/* Mobile Sidebar - Drawer/Sheet */}
-        {showSidebar && isMobile && (
+        {sidebarVisible && isMobile && (
           <Sheet open={isSidebarOpen} onOpenChange={handleMobileSidebarOpen}>
             <SheetTrigger asChild>
               <Button

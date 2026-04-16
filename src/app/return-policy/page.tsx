@@ -17,19 +17,19 @@ export default function ReturnPolicyPage() {
       </div>
 
       {/* Quick Summary */}
-      <Card className="mb-8 bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800">
+      <Card className="mb-8 bg-primary/5 border-primary/20">
         <CardContent className="pt-6">
           <div className="grid sm:grid-cols-3 gap-4 text-center">
             <div>
-              <p className="text-3xl font-bold text-emerald-600 dark:text-emerald-400">90</p>
+              <p className="text-3xl font-bold text-primary">90</p>
               <p className="text-sm text-muted-foreground">Day Warranty</p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-emerald-600 dark:text-emerald-400">30</p>
+              <p className="text-3xl font-bold text-primary">30</p>
               <p className="text-sm text-muted-foreground">Day Return Window</p>
             </div>
             <div>
-              <p className="text-3xl font-bold text-emerald-600 dark:text-emerald-400">Free</p>
+              <p className="text-3xl font-bold text-primary">Free</p>
               <p className="text-sm text-muted-foreground">Defective Replacements</p>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function ReturnPolicyPage() {
       <Card className="mb-8">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Shield className="w-5 h-5 text-emerald-600" />
+            <Shield className="w-5 h-5 text-primary" />
             90-Day Warranty
           </CardTitle>
         </CardHeader>
@@ -70,13 +70,13 @@ export default function ReturnPolicyPage() {
       <Card className="mb-8">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <RefreshCw className="w-5 h-5 text-emerald-600" />
+            <RefreshCw className="w-5 h-5 text-primary" />
             Return Process
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
           <div className="flex items-start gap-4">
-            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-400 font-medium text-sm shrink-0">
+            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-medium text-sm shrink-0">
               1
             </div>
             <div>
@@ -88,7 +88,7 @@ export default function ReturnPolicyPage() {
             </div>
           </div>
           <div className="flex items-start gap-4">
-            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-400 font-medium text-sm shrink-0">
+            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-medium text-sm shrink-0">
               2
             </div>
             <div>
@@ -100,7 +100,7 @@ export default function ReturnPolicyPage() {
             </div>
           </div>
           <div className="flex items-start gap-4">
-            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-400 font-medium text-sm shrink-0">
+            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-medium text-sm shrink-0">
               3
             </div>
             <div>
@@ -112,7 +112,7 @@ export default function ReturnPolicyPage() {
             </div>
           </div>
           <div className="flex items-start gap-4">
-            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-400 font-medium text-sm shrink-0">
+            <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-medium text-sm shrink-0">
               4
             </div>
             <div>
@@ -130,7 +130,7 @@ export default function ReturnPolicyPage() {
       <Card className="mb-8">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Package className="w-5 h-5 text-emerald-600" />
+            <Package className="w-5 h-5 text-primary" />
             Return Conditions
           </CardTitle>
         </CardHeader>

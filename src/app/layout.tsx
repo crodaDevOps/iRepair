@@ -18,12 +18,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "CellTech Distributor - B2B Cell Phone Parts Wholesale",
-    template: "%s | CellTech Distributor",
+    default: "iRepair Technologies - Wholesale Cell Phone Repair Parts",
+    template: "%s | iRepair Technologies",
   },
   description:
-    "Your trusted B2B partner for high-quality cell phone repair parts. Wholesale pricing on OEM and aftermarket components for iPhone, Samsung, Motorola, and more. MOQ 5 units.",
+    "iRepair Technologies is your trusted B2B source for high-quality cell phone repair parts. Wholesale pricing on OEM and aftermarket components for iPhone, Samsung, Motorola, and more.",
   keywords: [
+    "iRepair Technologies",
     "cell phone parts",
     "wholesale electronics",
     "iPhone parts",
@@ -35,26 +36,25 @@ export const metadata: Metadata = {
     "aftermarket parts",
     "screen replacement",
     "battery replacement",
-    "CellTech Distributor",
   ],
-  authors: [{ name: "CellTech Distributor" }],
+  authors: [{ name: "iRepair Technologies" }],
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "CellTech Distributor - B2B Cell Phone Parts Wholesale",
+    title: "iRepair Technologies - Wholesale Cell Phone Repair Parts",
     description:
-      "Your trusted B2B partner for high-quality cell phone repair parts. Wholesale pricing on OEM and aftermarket components.",
-    url: "https://celltechdist.com",
-    siteName: "CellTech Distributor",
+      "Your trusted B2B source for high-quality cell phone repair parts. Wholesale pricing on OEM and aftermarket components.",
+    url: "https://irepairtech.com",
+    siteName: "iRepair Technologies",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "CellTech Distributor - B2B Cell Phone Parts",
+    title: "iRepair Technologies - Wholesale Cell Phone Parts",
     description:
-      "Your trusted B2B partner for high-quality cell phone repair parts.",
+      "Your trusted B2B source for high-quality cell phone repair parts.",
   },
   robots: {
     index: true,
@@ -75,7 +75,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="bg-background">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -84,7 +84,7 @@ export default function RootLayout({
             defaultTheme="light"
             enableSystem
             attribute="class"
-            storageKey="celltech-theme"
+            storageKey="irepair-theme"
           >
             <MainLayout>{children}</MainLayout>
             <Toaster />

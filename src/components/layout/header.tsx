@@ -1,14 +1,12 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  Search,
   ShoppingCart,
   Menu,
-  Sun,
-  Moon,
   User,
   ChevronDown,
   LogIn,
@@ -28,7 +26,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { ThemeToggle, useTheme } from "@/components/theme-provider";
+import { ThemeToggle } from "@/components/theme-provider";
 import { SearchBar } from "./search-bar";
 import { MobileMenu } from "./mobile-menu";
 import { useCartStore } from "@/stores/cart-store";
@@ -51,16 +49,16 @@ export function Header({
   onSearch,
 }: HeaderProps) {
   const pathname = usePathname();
-  const { resolvedTheme } = useTheme();
-  const { items, getTotalItems } = useCartStore();
+  const { getTotalItems } = useCartStore();
   const openCart = useUIStore((state) => state.openCart);
   const [isMobileSearchOpen, setIsMobileSearchOpen] = React.useState(false);
   const cartItemCount = getTotalItems();
 
   // Navigation items for desktop
   const navItems = [
-    { label: "Products", href: "/products" },
-    { label: "Orders", href: "/orders" },
+    { label: "Catalog", href: "/products" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -105,14 +103,17 @@ export function Header({
               <Link
                 href="/"
                 className="flex items-center gap-2 shrink-0"
-                aria-label="CellTech Distributor - Home"
+                aria-label="iRepair Technologies - Home"
               >
-                <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-sm">CT</span>
-                </div>
-                <span className="hidden sm:inline-block font-semibold text-lg">
-                  CellTech Distributor
-                </span>
+                <Image
+                  src="/irepair-logo.jpeg"
+                  alt="iRepair Technologies"
+                  width={140}
+                  height={46}
+                  priority
+                  className="h-9 w-auto rounded-md"
+                />
+                <span className="sr-only">iRepair Technologies</span>
               </Link>
 
               {/* Desktop Navigation */}
@@ -230,8 +231,6 @@ function UserMenu({
   userEmail?: string;
   onLogout?: () => void;
 }) {
-  const { resolvedTheme } = useTheme();
-
   if (!isAuthenticated) {
     return (
       <DropdownMenu>

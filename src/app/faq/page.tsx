@@ -140,7 +140,7 @@ export default function FAQPage() {
         ))}
       </div>
 
-      <Card className="mt-12 bg-emerald-50 dark:bg-emerald-900/20 border-emerald-200 dark:border-emerald-800">
+      <Card className="mt-12 bg-primary/5 border-primary/20">
         <CardContent className="pt-6 text-center">
           <h2 className="text-xl font-semibold text-foreground mb-2">
             Still have questions?

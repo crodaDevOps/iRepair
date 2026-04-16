@@ -104,31 +104,31 @@ export default function ContactPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-emerald-600 dark:text-emerald-400 mt-0.5" />
+                <Mail className="w-5 h-5 text-primary mt-0.5" />
                 <div>
                   <p className="font-medium text-foreground">Email</p>
                   <a
-                    href="mailto:support@celltechdist.com"
-                    className="text-muted-foreground hover:text-emerald-600 dark:hover:text-emerald-400"
+                    href="mailto:support@irepairtech.com"
+                    className="text-muted-foreground hover:text-primary"
                   >
-                    support@celltechdist.com
+                    support@irepairtech.com
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-emerald-600 dark:text-emerald-400 mt-0.5" />
+                <Phone className="w-5 h-5 text-primary mt-0.5" />
                 <div>
                   <p className="font-medium text-foreground">Phone</p>
                   <a
                     href="tel:+18005551234"
-                    className="text-muted-foreground hover:text-emerald-600 dark:hover:text-emerald-400"
+                    className="text-muted-foreground hover:text-primary"
                   >
                     (800) 555-1234
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-emerald-600 dark:text-emerald-400 mt-0.5" />
+                <MapPin className="w-5 h-5 text-primary mt-0.5" />
                 <div>
                   <p className="font-medium text-foreground">Address</p>
                   <p className="text-muted-foreground">
@@ -138,7 +138,7 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Clock className="w-5 h-5 text-emerald-600 dark:text-emerald-400 mt-0.5" />
+                <Clock className="w-5 h-5 text-primary mt-0.5" />
                 <div>
                   <p className="font-medium text-foreground">Business Hours</p>
                   <p className="text-muted-foreground">
@@ -160,8 +160,8 @@ export default function ContactPage() {
             <CardContent>
               {isSuccess ? (
                 <div className="py-12 text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-900 mb-4">
-                    <CheckCircle2 className="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+                    <CheckCircle2 className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">
                     Message Sent!

@@ -111,7 +111,7 @@ export default function TermsPage() {
             </p>
             <p className="mt-3">
               Please see our{' '}
-              <a href="/return-policy" className="text-emerald-600 hover:underline">
+              <a href="/return-policy" className="text-primary hover:underline">
                 Return Policy
               </a>{' '}
               page for complete details.

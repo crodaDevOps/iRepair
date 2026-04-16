@@ -110,7 +110,7 @@ export const TreeNode: React.FC<TreeNodeProps> = ({
         'outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1',
         // Hover state
         'hover:bg-primary-light hover:text-primary-dark dark:hover:bg-primary-dark dark:hover:text-primary-light',
-        // Active/selected state - emerald green
+        // Active/selected state - primary brand color
         isActive && 'bg-primary text-primary-foreground font-medium',
         isActive && 'hover:bg-primary hover:text-primary-foreground',
         // Focused state for keyboard navigation

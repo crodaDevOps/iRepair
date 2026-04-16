@@ -1,13 +1,14 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   Home,
   Package,
-  ShoppingBag,
-  FileText,
+  Info,
+  MessageSquare,
   User,
   LogIn,
   UserPlus,
@@ -15,7 +16,6 @@ import {
   HelpCircle,
   ChevronRight,
 } from "lucide-react";
-import { useTheme } from "next-themes";
 
 import {
   Sheet,
@@ -37,9 +37,9 @@ interface NavItem {
 
 const mainNavItems: NavItem[] = [
   { label: "Home", href: "/", icon: <Home className="h-5 w-5" /> },
-  { label: "Products", href: "/products", icon: <Package className="h-5 w-5" /> },
-  { label: "Orders", href: "/orders", icon: <ShoppingBag className="h-5 w-5" /> },
-  { label: "Quote Requests", href: "/quotes", icon: <FileText className="h-5 w-5" /> },
+  { label: "Catalog", href: "/products", icon: <Package className="h-5 w-5" /> },
+  { label: "About", href: "/about", icon: <Info className="h-5 w-5" /> },
+  { label: "Contact", href: "/contact", icon: <MessageSquare className="h-5 w-5" /> },
 ];
 
 const userNavItems: NavItem[] = [
@@ -63,7 +63,6 @@ export function MobileMenu({
 }: MobileMenuProps) {
   const pathname = usePathname();
   const [open, setOpen] = React.useState(false);
-  const { resolvedTheme } = useTheme();
 
   // Close on route change
   React.useEffect(() => {
@@ -85,10 +84,14 @@ export function MobileMenu({
         <SheetHeader className="p-4 border-b">
           <SheetTitle className="text-left">
             <Link href="/" className="flex items-center gap-2" onClick={handleNavClick}>
-              <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">CT</span>
-              </div>
-              <span className="font-semibold text-lg">CellTech Distributor</span>
+              <Image
+                src="/irepair-logo.jpeg"
+                alt="iRepair Technologies"
+                width={140}
+                height={46}
+                className="h-9 w-auto rounded-md"
+              />
+              <span className="sr-only">iRepair Technologies</span>
             </Link>
           </SheetTitle>
         </SheetHeader>

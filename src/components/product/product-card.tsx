@@ -52,7 +52,7 @@ const getStockStatus = (
 const getQualityGradeVariant = (grade: QualityGrade): 'default' | 'secondary' | 'outline' => {
   switch (grade) {
     case 'OEM':
-      return 'default'; // Will use custom emerald/green styling
+      return 'default'; // Uses primary brand color
     case 'Aftermarket':
       return 'outline'; // Will use custom warning styling
     case 'Refurbished':

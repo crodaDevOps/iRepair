@@ -73,8 +73,8 @@ export function ConfirmationStep({
     <div className="space-y-6">
       {/* Success Header */}
       <div className="text-center py-6">
-        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-emerald-100 dark:bg-emerald-900 mb-4">
-          <CheckCircle2 className="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
+        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
+          <CheckCircle2 className="w-8 h-8 text-primary" />
         </div>
         <h2 className="text-2xl font-bold text-foreground">Order Confirmed!</h2>
         <p className="text-muted-foreground mt-2">
@@ -114,8 +114,8 @@ export function ConfirmationStep({
       </Card>
 
       {/* Delivery Estimate */}
-      <div className="flex items-center gap-4 p-4 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800">
-        <Truck className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+      <div className="flex items-center gap-4 p-4 rounded-lg bg-primary/5 border border-primary/20">
+        <Truck className="w-6 h-6 text-primary" />
         <div>
           <p className="font-medium text-foreground">Estimated Delivery</p>
           <p className="text-sm text-muted-foreground">{estimatedDelivery}</p>
@@ -158,7 +158,7 @@ export function ConfirmationStep({
             <Separator />
             <div className="flex justify-between text-lg font-bold">
               <span>Total</span>
-              <span className="text-emerald-600 dark:text-emerald-400">${total.toFixed(2)}</span>
+              <span className="text-primary">${total.toFixed(2)}</span>
             </div>
           </div>
         </CardContent>
@@ -191,7 +191,7 @@ export function ConfirmationStep({
         <CardContent>
           <div className="space-y-4">
             <div className="flex items-start gap-3">
-              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-400 font-medium text-sm">
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-medium text-sm">
                 1
               </div>
               <div>
@@ -202,7 +202,7 @@ export function ConfirmationStep({
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-400 font-medium text-sm">
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-medium text-sm">
                 2
               </div>
               <div>
@@ -213,7 +213,7 @@ export function ConfirmationStep({
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-600 dark:text-emerald-400 font-medium text-sm">
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-medium text-sm">
                 3
               </div>
               <div>
@@ -229,10 +229,10 @@ export function ConfirmationStep({
 
       {/* Create Account Prompt for Guests */}
       {isGuest && (
-        <Card className="border-emerald-200 dark:border-emerald-800 bg-emerald-50/50 dark:bg-emerald-900/10">
+        <Card className="border-primary/20 bg-primary/5">
           <CardContent className="pt-6">
             <div className="flex items-start gap-4">
-              <User className="w-6 h-6 text-emerald-600 dark:text-emerald-400 mt-0.5" />
+              <User className="w-6 h-6 text-primary mt-0.5" />
               <div className="flex-1">
                 <h3 className="font-semibold text-foreground">Create an Account</h3>
                 <p className="text-sm text-muted-foreground mt-1">

@@ -13,14 +13,14 @@ import Link from 'next/link';
 
 export default function AboutPage() {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-5xl">
+    <div className="container mx-auto px-4 py-12 max-w-5xl">
       {/* Hero Section */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-foreground mb-4">
-          About CellTech Distributor
+          About iRepair Technologies
         </h1>
         <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-          Your trusted B2B partner for high-quality cell phone repair parts.
+          Your trusted B2B source for high-quality cell phone repair parts.
           We&apos;ve been serving repair shops across the USA since 2015.
         </p>
       </div>
@@ -47,7 +47,7 @@ export default function AboutPage() {
             <CardContent className="pt-6">
               <h3 className="text-xl font-semibold text-foreground mb-3">Founded by Technicians</h3>
               <p className="text-muted-foreground">
-                CellTech Distributor was founded by repair technicians who understood
+                iRepair Technologies was founded by repair technicians who understood
                 the frustrations of sourcing quality parts. We&apos;ve been in your shoes
                 and built the company we wished existed when we were running repair shops.
               </p>
@@ -69,13 +69,13 @@ export default function AboutPage() {
       {/* Why Choose Us */}
       <div className="mb-12">
         <h2 className="text-3xl font-bold text-foreground mb-6 text-center">
-          Why Choose CellTech?
+          Why Choose iRepair?
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card className="text-center">
             <CardContent className="pt-6">
-              <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center mx-auto mb-4">
-                <Truck className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <Truck className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Same-Day Shipping</h3>
               <p className="text-sm text-muted-foreground">
@@ -85,8 +85,8 @@ export default function AboutPage() {
           </Card>
           <Card className="text-center">
             <CardContent className="pt-6">
-              <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">90-Day Warranty</h3>
               <p className="text-sm text-muted-foreground">
@@ -96,8 +96,8 @@ export default function AboutPage() {
           </Card>
           <Card className="text-center">
             <CardContent className="pt-6">
-              <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center mx-auto mb-4">
-                <DollarSign className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <DollarSign className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Wholesale Pricing</h3>
               <p className="text-sm text-muted-foreground">
@@ -107,8 +107,8 @@ export default function AboutPage() {
           </Card>
           <Card className="text-center">
             <CardContent className="pt-6">
-              <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center mx-auto mb-4">
-                <Award className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <Award className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Quality Assured</h3>
               <p className="text-sm text-muted-foreground">
@@ -118,8 +118,8 @@ export default function AboutPage() {
           </Card>
           <Card className="text-center">
             <CardContent className="pt-6">
-              <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center mx-auto mb-4">
-                <Users className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <Users className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">1,000+ Partners</h3>
               <p className="text-sm text-muted-foreground">
@@ -129,8 +129,8 @@ export default function AboutPage() {
           </Card>
           <Card className="text-center">
             <CardContent className="pt-6">
-              <div className="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <Clock className="w-6 h-6 text-primary" />
               </div>
               <h3 className="font-semibold text-foreground mb-2">Expert Support</h3>
               <p className="text-sm text-muted-foreground">
@@ -149,11 +149,11 @@ export default function AboutPage() {
           Ready to Partner with Us?
         </h2>
         <p className="text-muted-foreground mb-6">
-          Join thousands of repair shops who trust CellTech for their parts needs.
+          Join thousands of repair shops who trust iRepair for their parts needs.
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
           <Button asChild size="lg">
-            <Link href="/">Browse Products</Link>
+            <Link href="/products">Browse Products</Link>
           </Button>
           <Button variant="outline" asChild size="lg">
             <Link href="/contact">Contact Us</Link>
